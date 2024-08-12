@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.info {
+  background-color: #f0f0f0;
+  padding: 10px;
+  width: 100%;
+}
+
+.navbar {
+  background-color: rgba(10, 10, 10, 0.543); 
+  margin-top: 40px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.navbar-hidden {
+  top: -40px; 
+}
+
+.content {
+  margin-top: 70px; /* Adjust based on the combined height of Navbar and Info */
+}
+
+/* About section */
+.about-page {
+  background-image: url('/images/wave4.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;  
+  min-height: 80vh;
+}
+
+.staircase-container {
+  display: flex;
+  gap: 50px; /* Space between each div */
+  flex-wrap: wrap; /* Allows wrapping of items when needed */
+}
+
+.staircase-item {
+  position: relative;
+  flex: 1; /* Makes each item take equal space */
+  min-width: 300px; /* Ensures items don’t get too small */
+  height: 100px;
+}
+
+.staircase-item:nth-child(2) {
+  margin-top: 50px; /* Reset margin for better control */
+}
+
+.staircase-item:nth-child(3) {
+  margin-top: 100px; /* Reset margin for better control */
+}
+
+/* The services section */
+.services-page {
+  background-image: url('/images/wave5.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 70vh;
+  padding: 20px;
+}
+
+.services-page h1 {
+  margin-bottom: 40px;
+}
+
+.services-page .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.services-page button {
+  padding: 10px 20px;
+  background-color: #f97316;
+  border-radius: 8px;
+  color: white;
+  transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+
+.services-page button:hover {
+  background-color: #fb923c;
+  font-weight: bold;
+}
+
+/* Testimonial page */
+.testimonial-container {
+  background-image: url('/images/polygrid.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This makes the background image fixed */
+  /* position: relative; */
+  /* padding: 20px;  */
+}
+
+.testimonial-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+  z-index: 1;
+}
+/* Media Queries */
+
+/* For screens smaller than 1000px */
+@media only screen and (max-width: 1000px) {
+  .staircase-container {
+    flex-direction: column; /* Stack items in a column */
+    gap: 20px; /* Reduced gap for column layout */
+  }
+
+  .staircase-item {
+    margin-top: 0; /* Reset margin for all items */
+    height: auto; /* Allow items to grow with content */
+  }
+  .navbar{
+    margin-top: 0px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: rgba(10, 10, 10, 0.543); /* Transparent background */
+    color: white;
+    margin-top: 0px;
+  }
+
+  .navbar-hidden {
+    top: 0px; /* Adjust based on the height of your Navbar */
+  }
+
+  .content {
+    margin-top: 0px; /* Adjust based on the combined height of Navbar and Info */
+  }
+}
+
+/* Slide-in About animation */
+@keyframes slideInAbout {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-inAbout {
+  opacity: 0;
+  animation: slideInAbout 2s forwards; /* 1s for duration, forwards keeps the final state */
+}
+
+/* Staggered animation delay for child elements */
+.staggered-animation:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.staggered-animation:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.staggered-animation:nth-child(3) {
+  animation-delay: 0.6s;
+}
+/* Slide-Up Services animation */
+@keyframes slideUpServices{
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-UpServices {
+  opacity: 0;
+  animation: slideUpServices 1s forwards; /* 1s for duration, forwards keeps the final state */
+}
+
+/* Staggered animation delay for child elements */
+.staggered-animationServices:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.staggered-animationServices:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.staggered-animationServices:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
