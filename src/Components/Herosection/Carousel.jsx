@@ -78,10 +78,9 @@ const Carousel = () => {
   return (
     <div className="carousel">
       <div className="relative">
-        <div className="h-[80vh] grid grid-cols-2 sm:block">
+        <div className="grid grid-cols-2 sm:block">
           <img
             className="h-[80vh] w-[100%] slide-right"
-            height="100%"
             src={carouselData[currentState].img}
             alt=""
           />

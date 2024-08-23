@@ -11,6 +11,7 @@ const AboutSection = () => {
   return (
     <section className="about-page ">
       <div className="container mx-auto mt-20 text-center">
+        <h1 className='text-2xl text-white font-bold py-6'>We are the leading security body to work with</h1>
         <div className="about-section flex flex-col md:flex-row gap-6 p-4">
           {/* Who We Are Section */}
           <div className="about-item bg-zinc-200 rounded-xl p-4">
@@ -20,10 +21,11 @@ const AboutSection = () => {
             </div>
             <div className="space-y-4 bg-zinc-100 p-4 rounded-b-lg hover:shadow-lg transition-shadow shadow-orange-400">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas consectetur eos placeat esse minima ipsam mollitia architecto earum similique, soluta quaerat amet laudantium sint cumque vero quod veritatis explicabo.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, distinctio sint! Dicta necessitatibus laboriosam maxime sint eum, quae nisi quasi quis ex quisquam alias aliquam minima amet quibusdam accusantium ipsum?
+                E-sekure Limited is a leading security services provider based in the UK, dedicated to
+safeguarding what matters most to our clients. With years of industry experience, we
+specialize in offering top-tier security solutions for residential, corporate, and special
+event needs. Our team of professionals combines advanced technology with in-depth
+knowledge to provide reliable, effective, and customized security services
               </p>
             </div>
           </div>
@@ -36,10 +38,12 @@ const AboutSection = () => {
             </div>
             <div className="space-y-4 bg-zinc-100 p-4 rounded-b-lg hover:shadow-lg transition-shadow shadow-orange-400">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas consectetur eos placeat esse minima ipsam mollitia architecto earum similique, soluta quaerat amet laudantium sint cumque vero quod veritatis explicabo.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, distinctio sint! Dicta necessitatibus laboriosam maxime sint eum, quae nisi quasi quis ex quisquam alias aliquam minima amet quibusdam accusantium ipsum?
+                We offer a wide range of security services designed to meet the unique challenges of
+modern safety needs. Our offerings include residential security solutions to protect
+your home, corporate protection services for businesses, and bespoke security
+strategies tailored to specific events or high-risk environments. At E-sekure Limited,
+we focus on delivering exceptional security services that ensure your safety and
+peace of mind at all times
               </p>
             </div>
           </div>
@@ -51,12 +55,14 @@ const AboutSection = () => {
               <h2 className="text-2xl font-bold">Why Choose Us?</h2>
             </div>
             <div className="space-y-4 bg-zinc-100 p-4 rounded-b-lg hover:shadow-lg transition-shadow shadow-orange-400">
+             
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas consectetur eos placeat esse minima ipsam mollitia architecto earum similique, soluta quaerat amet laudantium sint cumque vero quod veritatis explicabo.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, distinctio sint! Dicta necessitatibus laboriosam maxime sint eum, quae nisi quasi quis ex quisquam alias aliquam minima amet quibusdam accusantium ipsum?
-              </p>
+At E-sekure Limited, we prioritize your safety and peace of mind with unmatched
+expertise and dedication. Our team of highly trained security professionals delivers
+personalized  solutions  tailored  to  your  specific   needs,  ensuring  comprehensive
+protection for your home, business, or event. We stand out for our commitment to
+excellence, transparency, and client satisfaction, making us the trusted choice for
+security services across the UK.</p>
             </div>
           </div>
         </div>

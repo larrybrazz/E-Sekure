@@ -10,7 +10,7 @@ const ServicesSection = () => {
 
   return (
     <div className="services-page">
-      <h1 className="text-center font-bold text-3xl text-white mb-8">Our Services</h1>
+      <h1 className="text-center font-bold text-3xl text-orange-700 mb-8">Our Services</h1>
       <div className="container mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-4">
         
         {/* Service 1 */}

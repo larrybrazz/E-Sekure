@@ -6,7 +6,7 @@ const Navbar = ({hidden}) => {
  const [open, setOpen] = useState(false)
   return (
     <div className={`navbar  ${hidden ? 'navbar-hidden' : ''}`} >
-      <nav className=" container mx-auto font-bold py-4 hidden md:flex justify-between items-center flex-wrap">
+      <nav className="container mx-auto font-bold py-4 hidden md:flex justify-between items-center">
         <h1 className="text-4xl font-serif">E-Sekure</h1>
         <p className="text-xl hover:text-yellow-700">
           <NavLink to="/">Home</NavLink>
@@ -31,9 +31,9 @@ const Navbar = ({hidden}) => {
         </p>
       </nav>
 
-      <nav className="font-bold  py-4 md:hidden">
+      <nav className="container mx-auto font-bold  py-2 md:hidden">
         <div className="flex justify-between items-center">
-          <h1 className="text-5xl font-serif">E-Sekure</h1>
+          <h1 className="text-3xl font-serif">E-Sekure</h1>
           <div>
             <span onClick={() => setOpen((prev) => !prev)}>
               <i className="fa fa-bars text-2xl"></i>
@@ -52,13 +52,7 @@ const Navbar = ({hidden}) => {
               onClick={() => setOpen((prev) => !prev)}
               className="menu-item hover:text-yellow-700"
             >
-              <NavLink to="/gallery">Gallery</NavLink>
-            </li>
-            <li
-              onClick={() => setOpen((prev) => !prev)}
-              className="menu-item hover:text-yellow-700"
-            >
-              <NavLink to="/shop">Shop</NavLink>
+              <NavLink to="/about">About</NavLink>
             </li>
             <li
               onClick={() => setOpen((prev) => !prev)}
@@ -70,7 +64,13 @@ const Navbar = ({hidden}) => {
               onClick={() => setOpen((prev) => !prev)}
               className="menu-item hover:text-yellow-700"
             >
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/clients">Clients</NavLink>
+            </li>
+            <li
+              onClick={() => setOpen((prev) => !prev)}
+              className="menu-item hover:text-yellow-700"
+            >
+              <NavLink to="/Certifications">Certifications</NavLink>
             </li>
             <li
               onClick={() => setOpen((prev) => !prev)}

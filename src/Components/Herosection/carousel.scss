@@ -1,58 +1,57 @@
-.carousel{
-    height: 80vh;
-    text-align: center;
+.carousel {
+  text-align: center;
+  position: relative;
+  margin-top: 4rem;
+  z-index: 1; // Ensure carousel is above any potential lower layers
 
- .carousel-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  .carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; // Ensure text content is above the carousel image
 
-.slide-up {
-    font-size: 2rem;
-    margin: 1rem 0; 
-    font-weight: 900;
-    color: white;
-    font-style: italic;
-    font-family: 'Montserrat', sans-serif;
+    .slide-up {
+      font-size: 2rem;
+      margin: 1rem 0;
+      font-weight: 900;
+      color: white;
+      font-style: italic;
+      font-family: 'Montserrat', sans-serif;
 
-    &.active {
-      animation: slide-up 1.4s ease;
-    }
-  }
-
-  .fade-in {
-    font-size: 1.1rem;
-    margin: 1rem 0;
-    font-weight: 500;
-    text-align: center;
-    color: rgb(249, 189, 10);
-    font-family: 'Montserrat', sans-serif;
-    font-style: oblique;
-
-    &.active {
-      animation: fade-in 2s ease;
-    }
-  }
-
-  .slide-left {
-    font-size: 1rem;
-
-    &.active {
-      animation: slide-left 2.1s ease;
+      &.active {
+        animation: slide-up 1.4s ease;
+      }
     }
 
-    .btn:hover{
-        background-image: linear-gradient(to right, blue,black, green,orangered);
+    .fade-in {
+      font-size: 1.1rem;
+      margin: 1rem 0;
+      font-weight: 500;
+      text-align: center;
+      color: rgb(249, 189, 10);
+      font-family: 'Montserrat', sans-serif;
+      font-style: oblique;
+
+      &.active {
+        animation: fade-in 2s ease;
+      }
+    }
+
+    .slide-left {
+      font-size: 1rem;
+
+      &.active {
+        animation: slide-left 2.1s ease;
+      }
+
+      .btn:hover {
+        background-image: linear-gradient(to right, blue, black, green, orangered);
         border-color: black;
-    
+      }
     }
   }
 }
-
-}
- 
-
 
 @keyframes slide-up {
   0% {
@@ -91,15 +90,12 @@
 }
 
 @media (max-width: 900px) {
-    
-
-    .carousel-text {
-        .slide-up {
-            font-size: 2rem;
-        }
-        .fade-in {
-            font-size: 1rem;
-        }
+  .carousel-text {
+    .slide-up {
+      font-size: 2rem;
     }
+    .fade-in {
+      font-size: 1rem;
+    }
+  }
 }
-

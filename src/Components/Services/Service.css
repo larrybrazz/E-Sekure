@@ -1,0 +1,21 @@
+
+
+.service {
+  background-image: url('/images/layered-peak.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This makes the background image fixed */
+  padding: 20px; /* Add padding if you want content to be spaced from the edges */
+  position: relative; /* Ensure proper positioning */
+}
+
+.service::before {
+  content: '';
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Black with 50% transparency */
+  z-index: 1;
+}

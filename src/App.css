@@ -30,44 +30,42 @@ body {
 }
 
 /* About section */
-.about-page {
+/* .about-page {
   background-image: url('/images/wave4.png');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;  
   min-height: 80vh;
-}
-
-.staircase-container {
-  display: flex;
-  gap: 50px; /* Space between each div */
-  flex-wrap: wrap; /* Allows wrapping of items when needed */
-}
-
-.staircase-item {
+} */
+.about-page {
+  background-image: url('/images/layered-peak.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This makes the background image fixed */ 
   position: relative;
-  flex: 1; /* Makes each item take equal space */
-  min-width: 300px; /* Ensures items don’t get too small */
-  height: 100px;
+  /* padding: 20px;  */
 }
 
-.staircase-item:nth-child(2) {
-  margin-top: 50px; /* Reset margin for better control */
+.about-page::before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+  z-index: 1;
 }
 
-.staircase-item:nth-child(3) {
-  margin-top: 100px; /* Reset margin for better control */
-}
 
 /* The services section */
-.services-page {
+/* .services-page {
   background-image: url('/images/wave5.png');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
-  min-height: 70vh;
+  min-height: 80vh;
   padding: 20px;
-}
+} */
 
 .services-page h1 {
   margin-bottom: 40px;
@@ -98,13 +96,12 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* This makes the background image fixed */
-  /* position: relative; */
+  position: relative;
   /* padding: 20px;  */
 }
 
 .testimonial-container::before {
   content: '';
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -116,15 +113,6 @@ body {
 
 /* For screens smaller than 1000px */
 @media only screen and (max-width: 1000px) {
-  .staircase-container {
-    flex-direction: column; /* Stack items in a column */
-    gap: 20px; /* Reduced gap for column layout */
-  }
-
-  .staircase-item {
-    margin-top: 0; /* Reset margin for all items */
-    height: auto; /* Allow items to grow with content */
-  }
   .navbar{
     margin-top: 0px;
   }
