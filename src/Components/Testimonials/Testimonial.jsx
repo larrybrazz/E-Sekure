@@ -7,6 +7,7 @@ const Testimonial = () => {
         <h1 className='text-2xl font-semibold text-white'>
           What our previous clients have to say...
         </h1>
+        
         <div className='grid grid-cols-1 mx-4 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
           {Array(4)
             .fill('')

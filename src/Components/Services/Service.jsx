@@ -7,7 +7,12 @@ const Service = () => {
     <div>
       <div className='bg-orange-600 text-center mt-16 py-8'>
         <h1 className='text-3xl font-bold text-white'>Services</h1>
-        <div></div>
+         <div className='flex justify-center mt-2 mb-8'>
+            <span className=" w-[100px] flex items-center  space-x-2">
+          <p className="dash"></p> <p className="dot"></p>{" "}
+          <p className="dash"></p>
+        </span>
+        </div>
       </div>
       <div className=''>
         <div className='flex items-center justify-center p-6'>

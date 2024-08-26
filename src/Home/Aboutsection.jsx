@@ -12,6 +12,12 @@ const AboutSection = () => {
     <section className="about-page ">
       <div className="container mx-auto mt-20 text-center">
         <h1 className='text-2xl text-white font-bold py-6'>We are the leading security body to work with</h1>
+         <div className='flex justify-center mt-2 mb-8'>
+            <span className=" w-[100px] flex items-center  space-x-2">
+          <p className="dash"></p> <p className="dot"></p>{" "}
+          <p className="dash"></p>
+        </span>
+        </div>
         <div className="about-section flex flex-col md:flex-row gap-6 p-4">
           {/* Who We Are Section */}
           <div className="about-item bg-zinc-200 rounded-xl p-4">

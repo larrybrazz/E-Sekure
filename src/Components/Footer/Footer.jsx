@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer grid sm:grid-cols-2 md:grid-cols-4 bg-zinc-900 py-4 text-white">
       <div className="flex items-center sm:border-r-2 border-r-palevioletred">
         <div className="  px-2 space-y-4">
-          <h1 className="font-bold text-3xl"> Esecure</h1>
+          <h1 className="font-bold text-3xl"> Esekure</h1>
           <div className="text-zinc-400 flex justify-between">
             <span>
               <i className="fa fa-facebook hover:text-blue-500"></i>

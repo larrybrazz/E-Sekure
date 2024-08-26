@@ -16,15 +16,12 @@ const Navbar = ({hidden}) => {
         </p>
         <p className="text-xl hover:text-yellow-700">
           <NavLink to="/services">Services</NavLink>
-              </p>
-                <p className="text-xl hover:text-yellow-700">
-          <NavLink to="/clients">Clients</NavLink>
         </p>
         <p className="text-xl hover:text-yellow-700">
-          <NavLink to="/certifications">Certifications</NavLink>
-              </p>
-                <p className="text-xl hover:text-yellow-700">
-          <NavLink to="/shop">Career</NavLink>
+          <NavLink to="/clients">Clients/Certifications</NavLink>
+        </p>
+        <p className="text-xl hover:text-yellow-700">
+          <NavLink to="/career">Career</NavLink>
         </p>
         <p className="text-xl hover:text-yellow-700">
           <NavLink to="/contact">Contact</NavLink>
@@ -64,13 +61,7 @@ const Navbar = ({hidden}) => {
               onClick={() => setOpen((prev) => !prev)}
               className="menu-item hover:text-yellow-700"
             >
-              <NavLink to="/clients">Clients</NavLink>
-            </li>
-            <li
-              onClick={() => setOpen((prev) => !prev)}
-              className="menu-item hover:text-yellow-700"
-            >
-              <NavLink to="/Certifications">Certifications</NavLink>
+              <NavLink to="/clients">Clients/Certifications</NavLink>
             </li>
             <li
               onClick={() => setOpen((prev) => !prev)}

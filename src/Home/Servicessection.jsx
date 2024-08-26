@@ -9,8 +9,14 @@ const ServicesSection = () => {
   }, []);
 
   return (
-    <div className="services-page">
+    <div className="services-page py-20">
       <h1 className="text-center font-bold text-3xl text-orange-700 mb-8">Our Services</h1>
+       <div className='flex justify-center mt-2 mb-8 text-orange-600'>
+            <span className=" w-[100px] flex items-center  space-x-2">
+          <p className="dash"></p> <p className="dot"></p>{" "}
+          <p className="dash"></p>
+        </span>
+        </div>
       <div className="container mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-4">
         
         {/* Service 1 */}
