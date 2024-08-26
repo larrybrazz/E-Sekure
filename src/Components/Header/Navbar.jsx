@@ -6,7 +6,7 @@ const Navbar = ({hidden}) => {
  const [open, setOpen] = useState(false)
   return (
     <div className={`navbar  ${hidden ? 'navbar-hidden' : ''}`} >
-      <nav className="container mx-auto font-bold py-4 hidden md:flex justify-between items-center">
+      <nav className="w-11/12 mx-auto font-bold py-4 hidden md:flex justify-between items-center">
         <h1 className="text-4xl font-serif">E-Sekure</h1>
         <p className="text-xl hover:text-yellow-700">
           <NavLink to="/">Home</NavLink>
