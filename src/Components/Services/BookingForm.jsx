@@ -47,7 +47,7 @@ const BookingForm    = () => {
     }
 
   return (
-    <div>
+    <div  id="booking-form">
       <form
         onSubmit={handleSubmit}
         className="space-y-3 pb-14 text-black"

@@ -6,16 +6,16 @@ const Info = () => {
       <div className="text-xm text-zinc-600 md:flex justify-between hidden py-2 border-b-2 border-b-black  ">
         <div className="flex flex-wrap space-x-4">
           <p>
-            <i className='fa fa-phone'></i> <span className="hover:text-palevioletred"> +447823719099</span>{" "}
+            <i className='fa fa-phone'></i> <span className="hover:text-palevioletred"> +44(0)7740049748</span>{" "}
           </p>
           <p>
             <i className='fa fa-envelope'></i>
             <span className="hover:text-palevioletred">
               {" "}
-              info@gmail.com
+              e-sekure@hotmail.com
             </span>{" "}
           </p>
-          <p> <i className='fa fa-location-dot'></i> A. 23 Ama kip kip, Newcastle, United Kingdom</p>
+          <p> <i className='fa fa-location-dot'></i> 38, Regents Street, Blyth, NE24 1LS</p>
         </div>
 
         <div className="flex space-x-4">

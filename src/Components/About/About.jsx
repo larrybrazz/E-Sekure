@@ -61,9 +61,7 @@ mind, and a commitment to excellence that sets the standard in the security indu
           <div className='bg-zinc-400 text-white '>
               <h2 className='text-2xl font-bold p-4 bg-orange-400'>Mision</h2>
           <p className=' p-4 rounded'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsam laboriosam laborum recusandae sequi, veniam enim fugit architecto. Quia magni ratione doloribus beatae voluptates debitis hic magnam tempore dolorum aliquid.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsam laboriosam laborum recusandae sequi, veniam enim fugit architecto. Quia magni ratione doloribus beatae voluptates debitis hic magnam tempore dolorum aliquid.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsam laboriosam laborum recusandae sequi, veniam enim fugit architecto. Quia magni ratione doloribus beatae voluptates debitis hic magnam tempore dolorum aliquid.
+            At E-sekure Security Services, our mission is to deliver exceptional security solutions that empower individuals and businesses across the UK. We are dedicated to providing innovative, reliable, and tailored protection, ensuring peace of mind through our unwavering commitment to excellence and integrity in every service we offer.
           </p>
           </div>
       </div>

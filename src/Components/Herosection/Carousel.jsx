@@ -5,31 +5,23 @@ const Carousel = () => {
   const carouselData = [
     {
       img: "images/360_F_813997721_JyDp9WbmecLbpxRNxIkc71mf7YvLUXDY.jpg",
-      title: "Dream Space",
-      info: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi in
-            voluptates voluptatum blanditiis aliquid voluptatem nam pariatur,
-            doloribus saepe illum totam inventore beatae, incidunt impedit.`,
+      title: "Your Dream Space",
+      info: ` At E-sekure, we bring your vision of guaranteed safety to life. Experience a world where every aspect of your life and business is protected, creating a haven where you can thrive without worry. Let us turn your security dreams into reality.`,
     },
     {
       img: "images/istockphoto-1618820974-170667a.webp",
-      title: "Dream Space",
-      info: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi in
-            voluptates voluptatum blanditiis aliquid voluptatem nam pariatur,
-            doloribus saepe illum totam inventore beatae, incidunt impedit.`,
+      title: "Tailored Security for You",
+      info: ` At E-sekure Security Services, we go beyond protection—we redefine it.  Discover security reimagined with E-sekure`,
     },
     {
       img: "images/stock-photo-data-security-concept.png",
-      title: "Dream Space",
-      info: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi in
-            voluptates voluptatum blanditiis aliquid voluptatem nam pariatur,
-            doloribus saepe illum totam inventore beatae, incidunt impedit.`,
+      title: "Security, Redefined for You!",
+      info: `At E-secure, we blend cutting-edge technology with personalized care to deliver proactive solutions that protect what matters most. Experience peace of mind with security reimagined..`,
     },
     {
       img: "images/istockphoto-1311088386-170667a.webp",
-      title: "Dream Space",
-      info: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi in
-            voluptates voluptatum blanditiis aliquid voluptatem nam pariatur,
-            doloribus saepe illum totam inventore beatae, incidunt impedit.`,
+      title: "Your Dream Space",
+      info: `At E-sekure, we bring your vision of guaranteed safety to life. Experience a world where every aspect of your life and business is protected, creating a haven where you can thrive without worry. Let us turn your security dreams into reality.`,
     },
   ];
   const carouselRef = useRef(null);
@@ -92,7 +84,10 @@ const Carousel = () => {
           <h1 className="slide-up">{carouselData[currentState].title}</h1>
           <p className="fade-in">{carouselData[currentState].info} </p>
           <div className="button slide-left">
-          <button className="btn border rounded-lg p-2 font-semibold bg-orange-400 text-white ">Book Consultation Now</button>
+            <button className="btn border rounded-lg p-2 font-semibold bg-orange-400 text-white "
+              onClick={() => window.location.href = "/services#booking-form"}
+            >Book Consultation Now
+            </button>
           </div>
         </div>
       </div>

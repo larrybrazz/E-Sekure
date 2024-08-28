@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import "./navbar.css"
 const Navbar = ({hidden}) => {
@@ -7,7 +7,9 @@ const Navbar = ({hidden}) => {
   return (
     <div className={`navbar  ${hidden ? 'navbar-hidden' : ''}`} >
       <nav className="w-11/12 mx-auto font-bold py-4 hidden md:flex justify-between items-center">
-        <h1 className="text-4xl font-serif">E-Sekure</h1>
+        <h1 className="text-4xl font-serif"><Link to={"/"}>
+              E-Sekure
+            </Link></h1>
         <p className="text-xl hover:text-yellow-700">
           <NavLink to="/">Home</NavLink>
         </p>
@@ -30,7 +32,12 @@ const Navbar = ({hidden}) => {
 
       <nav className="container mx-auto font-bold  py-2 md:hidden">
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl font-serif">E-Sekure</h1>
+          <h1 className="text-3xl font-serif">
+            <Link to={"/"}>
+              E-Sekure
+            </Link>
+            
+          </h1>
           <div>
             <span onClick={() => setOpen((prev) => !prev)}>
               <i className="fa fa-bars text-2xl"></i>
@@ -62,6 +69,12 @@ const Navbar = ({hidden}) => {
               className="menu-item hover:text-yellow-700"
             >
               <NavLink to="/clients">Clients/Certifications</NavLink>
+            </li>
+            <li
+              onClick={() => setOpen((prev) => !prev)}
+              className="menu-item hover:text-yellow-700"
+            >
+              <NavLink to="/career">Career</NavLink>
             </li>
             <li
               onClick={() => setOpen((prev) => !prev)}
